@@ -22,7 +22,7 @@ export default function AddFormDialog(props) {
   };
 
   const handleAdd = async () => {
-    await axios.post(`http://localhost:5000/products/`, addProduct);
+    await axios.post(`http://15.236.141.1:5000/products/`, addProduct);
     setOpen(false);
     setData(undefined);
   };

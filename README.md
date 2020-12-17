@@ -14,5 +14,5 @@
  - npm start
  - Client launch on PORT 3000
  
-Go to http://localhost:3000/ to test the project
+Go to http://15.236.141.1:3000/ to test the project
 # ipssi-app

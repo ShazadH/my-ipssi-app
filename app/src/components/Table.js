@@ -35,7 +35,7 @@ export default function DenseTable() {
   };
 
   const onDeleteProduct = async (id) => {
-    await axios.delete(`http://localhost:5000/products/${id}`);
+    await axios.delete(`http://15.236.141.1:5000/products/${id}`);
     setNotification(`Le produit a bien ete supprime !`);
     setCloseNotification(true);
     setData(undefined);
@@ -51,7 +51,7 @@ export default function DenseTable() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios("http://localhost:5000/products");
+      const result = await axios("http://15.236.141.1:5000/products");
       setData(result.data);
     };
 

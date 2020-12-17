@@ -24,7 +24,7 @@ export default function FormDialog(props) {
 
   const handleEdit = () => {
     axios
-      .put(`http://localhost:5000/products/${editProduct._id}`, editProduct)
+      .put(`http://15.236.141.1:5000/products/${editProduct._id}`, editProduct)
       .then((res) => {
         setEditProduct(res.data);
         setData(undefined);
